@@ -1,29 +1,41 @@
-# Pizza calculator
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		pizza cal
+	</title>
+	<script type="text/javascript">
 
-## Inleiding 
+/*
+naam: lorenzo meerman
+opdracht: pizza calculator
+school: davinci
+klas a2
+*/
 
-Pizza Di Mario werkt momenteel zijn bonnen voor zijn pizza's handmatig uit. Dit kan handiger en ze kloppen bij jou aan om een systeem te bedenken waarbij dit automatisch gaat.
+   const priceSmall = 4.99; 
+   const priceMeduim= 6.99;
+   const priceLarge= 8.99;
 
-## Functionele eisen
-Functionele eisen beschrijven welke functionaliteit je eindproduct moet bevatten. Functionele eisen mogen nooit van technische aard zijn! Ieder persoon moet begrijpen welke functionaliteit de opdracht moet bevatten, ongeacht kennisniveau.
+   var small = prompt("how many small ⌀12");
+   var meduim = prompt ("how many meduim ⌀15");
+   var large = prompt("how many large ⌀20");
 
-Deze opdracht moet aan de volgende functionele eisen voldoen:
+   var totalSmall= small * priceSmall;
+   var totalMeduim= meduim * priceMeduim;
+   var totalLarge= large * priceLarge;
+   var total= totalSmall + totalMeduim + totalLarge;
 
-- De klant kan een keuze maken uit 3 afmetingen pizza's, namelijk: small, medium en large. 
-- Voor elke afmeting wordt er gevraagd hoeveel pizza's de klant wil.
-- Zoek op internet naar passende prijzen voor deze pizza afmetingen en noteer deze prijzen als constante waarden
-- Toon op het scherm met goede omschrijving het aantal bestelde pizza's voor elke afmeting en berekenen per afmeting de prijs uit
-- Toon op het scherm de totaalprijs van alle pizza's.
-- Bovenaan in de JavaScript file noteer je als commenteer het volgende: voornaam, achternaam en opdracht: Pizza calculator
+   document.write("total small pizza "+small+" total price &euro;"+totalSmall+"<br>");
+   document.write("total meduim pizza "+ meduim+" total price &euro;"+totalMeduim+"<br>");
+   document.write("total large pizza "+large+" total price &euro;"+totalLarge+"<br>");
+   document.write("total price &euro; "+total);
 
+   alert("large pizza "+large +"\nmeduim pizza "+meduim +"\nsmall pizza "+small);
 
-## Technische eisen
-Technische eisen beschrijven aan welke vakgerichte voorwaarden de opdracht moet voldoen. Bijvoorbeeld dat de opdracht in correct validerend HTML en CSS moet worden geschreven.
+	</script>
+</head>
+<body>
 
-Deze opdracht moet aan de volgende technische eisen voldoen:
-
-- Leesbare layout van de code
-- Naamgeving is duidelijk en 'self explaining'
-- Er is passend commentaar toegevoegd in de code
-- Code staat op je eigen github account en levert in its learning de link in naar de repository
-- Je vraagt zelf actief of de docent je opdracht wil nakijken
+</body>
+</html>
